@@ -235,7 +235,7 @@ app.get('/logout', isAuthenticated, function(req, res){
 app.use( fileNotFound );
 
 // Pipeline is ready. Start listening!  
-const listener = app.listen(3000, () => {
+const listener = app.listen(process.env.PORT || 3000, () => {
   console.log("The static server is listening on port " + listener.address().port);
 });
 
