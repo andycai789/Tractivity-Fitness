@@ -137,7 +137,7 @@ function submit_past_activity_onclick() {
   /* Add 'p' tag above 'Add New Activity' Button */
   let newActivity = create_submission_success_element(   
     "Got it! ",
-    `${data.activity} for ${data.scalar} ${data.units}. `,
+    `${data.activity.charAt(0).toUpperCase() + data.activity.slice(1)} for ${data.scalar} ${data.units}. `,
     "Keep it up!"
   )
   insert_latest_response(pActAdd, newActivity)
@@ -197,7 +197,7 @@ function submit_future_activity_onclick() {
   /* Add 'p' tag above 'Add New Activity' Button  */
   let newActivity = create_submission_success_element(
     "Sounds good! Don't forget to come back to update your session for ",
-    `${data.activity} on ${reformat_date(data.date)}`,
+    `${data.activity.charAt(0).toUpperCase() + data.activity.slice(1)} on ${reformat_date(data.date)}`,
     "!"
   )
   insert_latest_response(fActAdd, newActivity)
