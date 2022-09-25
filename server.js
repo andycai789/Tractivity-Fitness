@@ -22,8 +22,8 @@ const act = require('./activity');
 // Google will respond with a key we can use to retrieve profile
 // information, packed into a redirect response that redirects to
 // server162.site:[port]/auth/redirect
-const hiddenClientID = process.env['ClientID']
-const hiddenClientSecret = process.env['ClientSecret']
+const hiddenClientID = process.env.ClientID
+const hiddenClientSecret = process.env.ClientSecret
 
 // An object giving Passport the data Google wants for login.  This is 
 // the server's "note" to Google.
